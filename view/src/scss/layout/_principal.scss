@@ -1,0 +1,54 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagina-principal {
+    width: 100%;
+    height: 80rem;
+    background-color: v.$verde;
+    padding: 2rem 0;
+    overflow: hidden;
+
+    .contenedor__principal{
+        width: 100%;
+        height: 80rem;
+        @include m.flex(column, center,center);
+        @include m.tablet{
+            flex-direction: row;
+        }
+        
+    }
+}
+
+.columna__izquierda {
+    @include m.flex(column, center,center,3rem);
+    width: 90%;
+
+    .principal__titulo{
+        color: v.$blanco;
+        
+    }
+
+    .principal__parrafo{
+        width: 100%;
+        margin: 0 ;
+        color: v.$blanco;
+        line-height: 3rem
+    }
+}
+
+.columna__derecha {
+    width: 90%;
+    @include m.flex(row,flex-end,center);
+    margin: 0 auto;
+
+    .principal__img{
+        width: 30rem;
+        margin: auto;
+
+        @include m.tablet{
+            width: 40rem;
+        }
+    }
+}
+
+

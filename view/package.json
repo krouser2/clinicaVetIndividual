@@ -1,0 +1,23 @@
+{
+  "name": "view",
+  "version": "1.0.0",
+  "description": "Vista de software de gestion veterinaria mi pequeña jungla",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "dev": "gulp dev"
+  },
+  "keywords": [
+    "npm",
+    "sass",
+    "html5",
+    "js"
+  ],
+  "author": "geovanni vera",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^5.0.0",
+    "gulp-sass": "^5.1.0",
+    "sass": "^1.77.6"
+  }
+}

@@ -1,0 +1,72 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+/*Footer*/
+
+.footer {
+    background-color: v.$rojo;
+    width: 100%;
+    .contenedor__footer{
+        width: 100%;
+        padding: 2rem 0;
+        @include m.flex(column,v.$space-b,center,4rem);
+        @include m.tablet{
+            flex-direction: row;
+        }
+    }
+}
+
+
+.footer__dir {
+    @include m.flex(column,center,center,2rem);
+    width: 100%;
+    line-height: 3rem;
+    .footer__dir__titulo{
+        color: v.$blanco;
+    }
+    .footer__parrafo {
+        width: 80%;
+        color: v.$blanco;
+    }
+}
+
+.footer__social {
+    width: 50%;
+    @include m.flex(column,center,center,3rem);
+    flex-wrap: wrap;
+    
+    .footer__social__titulo{
+        color:  v.$blanco;
+    }
+    .footer__social__enlaces{
+        @include m.flex(row,center,center,3rem);
+        flex-wrap: wrap;
+
+        .footer__enlace{
+            color: v.$blanco;
+            text-transform: capitalize;
+            display: flex;
+            gap: 1.5rem;
+            font-size: 1.8rem;
+        }
+    }
+}
+
+
+.fa-facebook,
+.fa-whatsapp,
+.fa-instagram{
+    transition: all 0.8s;
+    color: v.$blanco;
+}
+.fa-facebook:hover {
+    color: v.$azul;
+}
+.fa-whatsapp:hover {
+    color: v.$verde-claro;
+}
+.fa-instagram:hover {
+    color: v.$instagram;
+}
+.fa-phone {
+    color: v.$blanco;
+}
