@@ -1,0 +1,172 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+/*Variables*/
+:root{
+    --blanco: #fffbff;
+    --negro: #0d0210;
+    --rojo:#721d1d;
+    --verde:#1A3931;
+    --verde-obs:#132a24;
+    --principal:"Roboto", sans-serif;
+    --gris:#a8a7a8;
+    --azul:#0866FF;
+    --verde-claro:#00A884;
+    --instagram:#FC03B7;
+}
+/*Generales*/
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+*{
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+body{
+    font-size: 1.6rem;
+    font-family: var(--principal);
+}
+/*Elementos Generales*/
+a{
+    text-decoration: none;
+    color: var(--negro);
+    font-size: 1.8rem;
+}
+img{
+    width: 100%;
+
+}
+h1,
+h2,
+h3,
+h4{
+    text-align: center;
+    text-transform: uppercase;
+}
+h1{
+    font-size: 4rem;
+}
+h2{
+    font-size: 3.2rem;
+}
+/*Utilidades*/
+.contenedor{
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/*Sesion*/
+.pagina-sesion{
+    background-color: var(--verde);
+    padding: 10rem 5rem;
+}
+.contenedor__sesion{
+    width: 50%;
+    height: 50rem;
+    display: flex;
+    flex-direction: row-reverse;
+
+}
+@media (max-width:768px ){
+    .contenedor__sesion{
+        flex-direction: column;
+    }
+}
+
+
+/*Logo*/
+.sesion__left {
+    width: 50%;
+    height: 100%;
+    background-color: var(--blanco);
+    margin: auto;
+    position: relative;
+    transition: all 0.6s;
+
+}
+.sesion__left:hover{
+    box-shadow: 0 0 10px 0 var(--verde-claro);
+
+}
+.left-capa{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #ffffff34;
+}
+@media (max-width: 768px){
+    .sesion__left{
+        display: none;
+        z-index: -200;
+
+    }
+}
+.sesion__logo{
+    width: 200px;
+    position: absolute;
+    top:35% ;
+    left: 50%;
+    transform:translate(-50%);
+    z-index: 200;
+    
+}
+/*Formulario Sesion*/
+.sesion__right {
+    width: 50%;
+    background-color: var(--verde-obs);
+    border-top-right-radius:20px ;
+    border-bottom-right-radius: 20px;
+    height: 100%;
+    transition: all 0.6s;
+}
+.sesion__right:hover{
+    box-shadow: 0 0 10px 0 var(--verde-claro);
+}
+@media (max-width: 768px){
+    .sesion__right{
+        width: 100%;
+        border-radius: 20px;
+    }
+}
+.sesion__formulario {
+    width: 60%;
+    margin: 0 auto;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+.sesion__formulario__titulo {
+    color: var(--blanco);
+}
+.sesion__formulario__input {
+    padding: 1rem 2rem;
+    border-radius: 50px;
+    text-align: center;
+    transition: all 0.8S;
+}
+.sesion__formulario__input:hover{
+    background-color: var(--verde);
+    color: var(--blanco);
+}
+.sesion__formulario__btn {
+    background-color: var(--verde);
+    color: var(--blanco);
+    cursor: pointer;
+    transition: all 0.7s;
+}
+.sesion__formulario__btn:hover{
+    background-color: var(--rojo);
+}
+
