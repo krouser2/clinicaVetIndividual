@@ -10,9 +10,9 @@ const sass = gulpSass(dartSass);
 
 //un pipe es llamar una funcin despues de otra
 export function css(done){
-    src('src/scss/**/*.scss', {sourcemaps: true})// <- ubicacion origen
+    src('src/scss/**/*.scss')// <- ubicacion origen
         .pipe(sass().on('error', sass.logError)) // <-Compilador
-        .pipe(dest('build/css',{sourcemaps: true}));// <-destino
+        .pipe(dest('build/css'));// <-destino
 
     done();
 }
