@@ -83,10 +83,11 @@
     padding: 2rem 1rem;
 
     @include m.tablet {
-        @include m.flex(row, flex-end, start);
+        @include m.flex(row, flex-end, start,4rem);
     }
 
     .header__enlace {
+        @include m.flex(row, space-between,center,1rem);
         font-weight: 700;
         transition: all 0.8s;
         font-size: 1.8rem;
@@ -98,8 +99,6 @@
 }
 
 
-.fa-house,
-.fa-shield-dog,
-.fa-user {
+.red{
     color: v.$rojo;
 }
