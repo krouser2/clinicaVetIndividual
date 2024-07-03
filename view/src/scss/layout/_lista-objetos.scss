@@ -1,0 +1,66 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.pagina-lista {
+    background-color: rgba(v.$verde, 0.9);
+}
+.contenedor__lista {
+    padding: 4rem;
+
+    h2{
+        color: v.$blanco;
+        text-align: start;
+        margin:0 0 3rem 5%;
+    }
+    .lista {
+        width: 90%;
+        margin: 0 auto;
+        background-color: rgba(v.$blanco, 1);
+        border-collapse: collapse;
+        overflow: hidden;
+    }
+}
+.lista__fila {
+    .lista__encabezado,
+    .lista__contenido{
+        padding: 1rem;
+        border: solid 1px rgba(v.$gris, 1);
+    }
+    .lista__encabezado {
+        text-transform: capitalize;
+    }
+    .lista__contenido {
+
+        text-align: center;
+        transition: background-color 0.8s;
+        &:hover{
+            background-color: darken(v.$blanco, 20%);
+
+            cursor: pointer;
+        }
+
+        .pencil {
+            color: rgba(v.$azul, 0.9);
+            transition: all 0.8s;
+
+            &:hover{
+                color: darken($color: v.$azul, $amount: 40%);
+            }
+        }
+        .trash {
+            color: #dc2626;
+            transition: all 0.8s;
+            &:hover{
+                color: darken($color:#dc2626 , $amount: 20%);
+            }
+        }
+
+        
+    }
+}
+
+
+
+
+
+
