@@ -317,7 +317,7 @@ p {
 }
 .contenedor__sesion .sesion__right {
   width: 50%;
-  background-color: #122722;
+  background-color: #721d1d;
   border-top-right-radius: 20px;
   border-bottom-right-radius: 20px;
   height: 100%;
@@ -357,13 +357,14 @@ p {
   color: #ffffff;
 }
 .sesion__formulario .sesion__formulario__btn {
-  background-color: #1A3931;
+  background-color: #0d0210;
   color: #ffffff;
   cursor: pointer;
   transition: all 0.7s;
 }
 .sesion__formulario .sesion__formulario__btn:hover {
-  background-color: #721d1d;
+  background-color: #ffffff;
+  color: #0d0210;
 }
 
 /*Footer*/
@@ -474,20 +475,25 @@ p {
   overflow: hidden;
 }
 
+.lista__fila:nth-child(even) {
+  background-color: rgb(177, 174, 174);
+}
 .lista__fila .lista__encabezado,
 .lista__fila .lista__contenido {
-  padding: 1rem;
-  border: solid 1px #a8a7a8;
+  padding: 1rem 1.5rem;
 }
 .lista__fila .lista__encabezado {
+  background-color: rgba(114, 29, 29, 0.8);
   text-transform: capitalize;
+  color: #ffffff;
 }
 .lista__fila .lista__contenido {
   text-align: center;
-  transition: background-color 0.8s;
+  transition: all 0.6s ease-in;
 }
 .lista__fila .lista__contenido:hover {
   background-color: #cccccc;
+  color: #0d0210;
   cursor: pointer;
 }
 .lista__fila .lista__contenido .pencil {
@@ -503,4 +509,22 @@ p {
 }
 .lista__fila .lista__contenido .trash:hover {
   color: #861616;
+}
+
+.btn-agregar {
+  margin-top: 2rem;
+  margin-left: 2rem;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  width: 15%;
+  cursor: pointer;
+}
+.btn-agregar h3 {
+  font-size: 1.8rem;
+  margin-top: 1rem;
+}
+.btn-agregar i {
+  margin-left: 50%;
+  transform: translateX(-50%);
 }

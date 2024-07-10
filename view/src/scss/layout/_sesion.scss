@@ -56,7 +56,7 @@
 
     .sesion__right {
         width: 50%;
-        background-color: v.$verde-obs;
+        background-color: v.$rojo;
         border-top-right-radius: 20px;
         border-bottom-right-radius: 20px;
         height: 100%;
@@ -99,13 +99,14 @@
     }
 
     .sesion__formulario__btn {
-        background-color: v.$verde;
+        background-color: v.$negro;
         color: v.$blanco;
         cursor: pointer;
         transition: all 0.7s;
 
         &:hover {
-            background-color: v.$rojo;
+            background-color: v.$blanco;
+            color: v.$negro;
         }
     }
 
