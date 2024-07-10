@@ -32,64 +32,45 @@
             </nav>
         </div>
     </header>
-    <!-- Contenido Formulario Usuario -->
-    <div class="contenido-formulario">
-        <div class="contenedor">
-            <form action="">
-                <!-- Fila 1 -->
-                <div class="f1">
-                    <!-- columna 1 -->
-                    <div class="col-1">
-                        <label>Nombre</label>
-                        <input type="text" required>
-                    </div>
-                    <br>
-                    <!-- Columna 2 -->
-                    <div class="col-2">
-                        <label for="">Apellido Paterno</label>
-                        <input type="text" required>
-                        <br>
-                    </div>
-                    <br>
-                </div>
-                <!-- Fin F1 -->
-                <!-- F2 -->
-                <div class="f2">
-                    <!-- columna 1 -->
-                    <div class="col-1">
-                        <label>Apellido Paterno</label>
-                        <input type="text" required>
-                    </div>
-                    <br>
-                    <!-- Columna 2 -->
-                    <div class="col-2">
-                        <label for="">Direccion</label>
-                        <input type="text" required>
-                        <br>
-                    </div>
-                    <br>
+    <!-- Contenido Index -->
+    <div class="pagina-lista">
+        <!-- Primera Columna -->
+        <div class=" contenedor__lista contenedor">
+            <h2>Usuarios</h2>
+            <table class="lista">
+                <tr class="lista__fila">
+                    <th class="lista__encabezado">ID Empleado</th>
+                    <th class="lista__encabezado">Rol</th>
+                    <th class="lista__encabezado">Estatus</th>
+                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">001</td>
+                    <td class="lista__contenido">Veterinario</td>
+                
+                    <td class="lista__contenido">Activo</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">002</td>
+                    <td class="lista__contenido">Cirujano</td>
+                    
+                    <td class="lista__contenido">Activo</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
 
-                </div>
-                <!-- Fin f2 -->
-                <!-- F3 -->
-                <div class="f3">
-                    <!-- Columna 1 -->
-                    <div class="col-1">
-                        <label for="">Movil</label>
-                        <input type="tel" required>
-                        <br>
-                    </div>
-                    <!-- Columna 2 -->
-                    <div class="col-2">
-                        <label for="">Correo Electronico</label>
-                        <input type="email" required>
-                        <br>
-                    </div>
-                </div>
-            </form>
+            </table>
+
+            <div class="btn-agregar">
+                <a href="form-usuario.html"> <i class="fa-solid fa-user-plus"></i>
+                </a>
+                <h3>Nuevo Usuario</h3>
+
+            </div>
         </div>
     </div>
-    <!-- Fin Formulario Usuario -->
     <!-- Pie de pagina -->
     <footer class="footer">
         <div class="contenedor__footer contenedor">

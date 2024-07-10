@@ -32,64 +32,53 @@
             </nav>
         </div>
     </header>
-    <!-- Contenido Formulario Usuario -->
-    <div class="contenido-formulario">
-        <div class="contenedor">
-            <form action="">
-                <!-- Fila 1 -->
-                <div class="f1">
-                    <!-- columna 1 -->
-                    <div class="col-1">
-                        <label>Nombre</label>
-                        <input type="text" required>
-                    </div>
-                    <br>
-                    <!-- Columna 2 -->
-                    <div class="col-2">
-                        <label for="">Apellido Paterno</label>
-                        <input type="text" required>
-                        <br>
-                    </div>
-                    <br>
-                </div>
-                <!-- Fin F1 -->
-                <!-- F2 -->
-                <div class="f2">
-                    <!-- columna 1 -->
-                    <div class="col-1">
-                        <label>Apellido Paterno</label>
-                        <input type="text" required>
-                    </div>
-                    <br>
-                    <!-- Columna 2 -->
-                    <div class="col-2">
-                        <label for="">Direccion</label>
-                        <input type="text" required>
-                        <br>
-                    </div>
-                    <br>
+    <!-- Contenido Index -->
+    <div class="pagina-lista">
+        <!-- Primera Columna -->
+        <div class=" contenedor__lista contenedor">
+            <h2>Cliente</h2>
+            <table class="lista">
+                <tr class="lista__fila">
+                    <th class="lista__encabezado">ID</th>
+                    <th class="lista__encabezado">Nombre</th>
+                    <th class="lista__encabezado">Costo Unitario</th>
+                    <th class="lista__encabezado">Cantidad</th>
+                    <th class="lista__encabezado" colspan="2">Operaciones</th>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">001</td>
+                    <td class="lista__contenido">vacuna para la rabia</td>
+                    <td class="lista__contenido">$600</td>
+                    <td class="lista__contenido">25</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">002</td>
+                    <td class="lista__contenido">vacuna para la gripe</td>
+                    <td class="lista__contenido">$400</td>
+                    <td class="lista__contenido">40</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+                <tr class="lista__fila">
+                    <td class="lista__contenido">003</td>
+                    <td class="lista__contenido">vacuna para la roña</td>
+                    <td class="lista__contenido">$600</td>
+                    <td class="lista__contenido">6</td>
+                    <td class="lista__contenido"><i class="fa-solid fa-pencil pencil"></i></td>
+                    <td class="lista__contenido"><i class="fa-solid fa-trash trash"></i></td>
+                </tr>
+            </table>
 
-                </div>
-                <!-- Fin f2 -->
-                <!-- F3 -->
-                <div class="f3">
-                    <!-- Columna 1 -->
-                    <div class="col-1">
-                        <label for="">Movil</label>
-                        <input type="tel" required>
-                        <br>
-                    </div>
-                    <!-- Columna 2 -->
-                    <div class="col-2">
-                        <label for="">Correo Electronico</label>
-                        <input type="email" required>
-                        <br>
-                    </div>
-                </div>
-            </form>
+            <div class="btn-agregar">
+                <a href="form-cliente.html"> <i class="fa-solid fa-user-plus"></i>
+                </a>
+                <h3>Nuevo Insumo</h3>
+
+            </div>
         </div>
     </div>
-    <!-- Fin Formulario Usuario -->
     <!-- Pie de pagina -->
     <footer class="footer">
         <div class="contenedor__footer contenedor">

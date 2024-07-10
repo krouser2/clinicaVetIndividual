@@ -5,7 +5,7 @@
     background-color: rgba(v.$verde, 0.9);
 }
 .contenedor__lista {
-    padding: 4rem;
+   padding: 4rem 0;
 
     h2{
         color: v.$blanco;
@@ -68,7 +68,7 @@
 
 .btn-agregar{
     margin-top: 2rem;
-    margin-left: 2rem;
+    margin-left: 6rem;
     background-color: rgba(v.$blanco, 1);
     border-radius: 10px;
     padding: 1rem;
@@ -85,6 +85,7 @@
 
     i{
         margin-left: 50%;
+        font-size: 1.8rem;
         transform: translateX(-50%);
     }
 }

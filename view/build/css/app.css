@@ -353,18 +353,17 @@ p {
   transition: all 0.8S;
 }
 .sesion__formulario .sesion__formulario__input:hover {
-  background-color: #1A3931;
-  color: #ffffff;
+  background-color: #cccccc;
+  color: #0d0210;
 }
 .sesion__formulario .sesion__formulario__btn {
-  background-color: #0d0210;
-  color: #ffffff;
+  background-color: #ffffff;
+  color: #0d0210;
   cursor: pointer;
   transition: all 0.7s;
 }
 .sesion__formulario .sesion__formulario__btn:hover {
-  background-color: #ffffff;
-  color: #0d0210;
+  background-color: #cccccc;
 }
 
 /*Footer*/
@@ -460,7 +459,7 @@ p {
 }
 
 .contenedor__lista {
-  padding: 4rem;
+  padding: 4rem 0;
 }
 .contenedor__lista h2 {
   color: #ffffff;
@@ -513,7 +512,7 @@ p {
 
 .btn-agregar {
   margin-top: 2rem;
-  margin-left: 2rem;
+  margin-left: 6rem;
   background-color: white;
   border-radius: 10px;
   padding: 1rem;
@@ -526,5 +525,6 @@ p {
 }
 .btn-agregar i {
   margin-left: 50%;
+  font-size: 1.8rem;
   transform: translateX(-50%);
 }
